@@ -51,7 +51,8 @@ body{
 
 }
 .results{
-    background-color: rgb(59, 62, 85);
+    /* background-color: rgb(59, 62, 85); */
+    background-color:rgb(42, 135, 150);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -172,7 +173,7 @@ button:hover{
 
 .result{
     text-align: center;
-    color: rgb(240, 240, 0);
+    color: rgb(54, 54, 30);
 }
 
 .leftscore{
@@ -180,13 +181,13 @@ button:hover{
     width: 74px;
     height: 74px;
     border-radius: 100%;
-    box-shadow: inset 1px 1px 12px 0px yellow;
+    box-shadow: inset 1px 12px 12px 10px rgb(27, 165, 193);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    color: var(--light-slate-blue);
+    color: var(--orangey-yellow);
     font-weight: 700;
 }
 
@@ -197,11 +198,17 @@ button:hover{
 }
 
 .text{
-    line-height: 30px;
+    line-height: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 20px;
+    
     font-family: 'Hanken Grotesk', sans-serif;
     color: white;
 
 }
+
+h3{
+    font-size: 30px;
+}
+
+
