@@ -2,10 +2,14 @@
 
 
 :root{
---light-red: hsla(0, 100%, 67%,15%);
---orangey-yellow: hsla(39, 100%, 56%,15%);
---green-teal: hsla(166, 100%, 37%,15%);
---cobalt-blue: hsla(234, 85%, 45%,15%);
+--light-reda: hsla(0, 100%, 67%,15%);
+--orangey-yellowa: hsla(39, 100%, 56%,15%);
+--green-teala: hsla(166, 100%, 37%,15%);
+--cobalt-bluea: hsla(234, 85%, 45%,15%);
+--light-red: hsl(0, 100%, 67%);
+--orangey-yellow: hsl(39, 100%, 56%);
+--green-teal: hsl(166, 100%, 37%);
+--cobalt-blue: hsl(234, 85%, 45%);
 --light-slate-blue : hsl(252, 100%, 67%);
 --light-royal-blue : hsl(241, 81%, 54%);
 --violet-blue: hsla(256, 72%, 46%, 1);
@@ -23,43 +27,60 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
 
 .main-card{
     width: 650px;
-    height: 550px; 
+    height: 500px; 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px -8px rgb(133, 178, 218);
-    border-radius: 15px;
+    /* flex-direction: row; */
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px -8px rgb(24, 101, 168);
+    border-radius: 25px;
+    overflow: hidden;
 
 
 }
 .results{
-    background-color: black;
+    background-color: rgb(59, 62, 85);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
     width: 100%;
-    height: 550px;
-    border-radius: 15px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    
+    height: 500px;
+    border-radius: 25px;
   
 
 }
 .summary{
     background-color: white;
     width: 100%;
-    height: 550px;
+    height: 500px;
     font-family: 'Hanken Grotesk', sans-serif;
     padding: 30px;   
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* align-items:center; */
-    
+    justify-content: space-between; 
+   
+     
 } 
 
 .reaction{
-    background-color:var(--light-red);
+    background-color:var(--light-reda);
     border-radius: 15px;
     font-size: 15px;
     padding: 15px;
@@ -72,7 +93,7 @@
 
 }
 .memory{
-    background-color: var(--orangey-yellow);
+    background-color: var(--orangey-yellowa);
     border-radius: 15px;
     font-size: 15px;
     padding: 15px;
@@ -85,7 +106,7 @@
 }
 
 .verbal{
-    background-color: var(--green-teal);
+    background-color: var(--green-teala);
     border-radius: 15px;
     font-size: 15px;
     padding: 15px;
@@ -98,7 +119,7 @@
 }
 
 .visual{
-    background-color: var(--cobalt-blue);
+    background-color: var(--cobalt-bluea);
     border-radius: 15px;
     font-size: 15px;
     padding: 15px;
@@ -131,4 +152,56 @@ button:hover{
     flex-direction: column;
     justify-content: space-between;
     
+}
+
+.r{
+   color: var(--light-red); 
+}
+
+.m{
+    color: var(--orangey-yellow);
+}
+
+.ve{
+    color: var(--green-teal);
+}
+
+.vi{
+    color:var(--cobalt-blue);
+}
+
+.result{
+    text-align: center;
+    color: rgb(240, 240, 0);
+}
+
+.leftscore{
+    padding: 50px;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 12px 0px yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    color: var(--light-slate-blue);
+    font-weight: 700;
+}
+
+.big{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text{
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: white;
+
 }
